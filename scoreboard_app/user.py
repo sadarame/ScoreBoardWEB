@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3.7
 from flask_login import UserMixin
 
 from db import get_db

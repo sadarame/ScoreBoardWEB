@@ -1,3 +1,5 @@
+
+#!/usr/local/bin/python3.7
 # Python標準ライブラリ
 import json
 import os
@@ -59,6 +61,7 @@ def load_user(user_id):
 
 @app.route("/")
 def index():
+    # return "hello5"
     if current_user.is_authenticated:
         return (
             "<p>Hello, {}! You're logged in! Email: {}</p>"

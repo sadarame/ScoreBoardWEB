@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3.7
 # http://flask.pocoo.org/docs/1.0/tutorial/database/
 import sqlite3
 
