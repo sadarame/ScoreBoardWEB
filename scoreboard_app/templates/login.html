@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン - スポーツスコアボード</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="row no-gutters">
+        <div class="col-md-6 bg-image order-2 order-md-1">
+            <div class="overlay">
+                <h2>お気に入りのチームを選択</h2>
+                <p>リアルタイムに試合結果を表示</p>
+                
+            </div>
+            
+        </div>
+        <div class="col-md-6 login-form order-1 order-md-2">
+            <div class="container">
+                <h1>ログイン</h1>
+                <form onsubmit="login(event)">
+                    <div class="form-group">
+                        <label for="username">ユーザー名</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">パスワード</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ログイン</button>
+                </form>
+                <div class="social-login">
+                    <p>またはソーシャルアカウントでログイン</p>
+                    <button class="btn btn-danger">Googleでログイン</button>
+                    <button class="btn btn-primary">Facebookでログイン</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login(event) {
+            event.preventDefault();
+            // ログイン処理（ここではダミーで次の画面に遷移）
+            window.location.href = 'team_select.html';
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
