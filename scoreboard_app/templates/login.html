@@ -3,22 +3,80 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>ログイン - スポーツスコアボード</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
 </head>
 
 <body>
+
     <div class="row no-gutters">
         <div class="col-md-6 bg-image order-2 order-md-1">
-            <div class="overlay">
-                <h2>お気に入りのチームを選択</h2>
-                <p>リアルタイムに試合結果を表示</p>
+            <!-- 説明エリア -->
+            <div>
+                <div class="overlay-content">
+                    <h2>お気に入りのチームを選択</h2>
+                    <p>リアルタイムに試合結果を表示</p>
+                </div>
+
+                <!-- スライダーのコンテナ -->
+
+                <!-- サンプル１つ目 -->
+                <div class="bb-score__item">
+                    <a class="bb-score__content" data-cl_cl_index="1">
+                        <p class="bb-score__description">
+                            <span class="bb-score__date">6/2（日）</span>
+                            <span class="bb-score__venue">エスコンF</span>
+                        </p>
+                        <div class="bb-score__status">
+                            <div class="bb-score__team">
+                                <span class="bb-score__homeLogo bb-score__homeLogo--npbTeam8"></span>
+                                <span>日本ハム</span>
+                                <span class="bb-score__score">9</span>
+                            </div>
+                            <span class="bb-score__score">-</span>
+                            <div class="bb-score__team">
+                                <span class="bb-score__score">2</span>
+                                <span>DeNA</span>
+                                <span class="bb-score__awayLogo bb-score__awayLogo--npbTeam3"></span>
+                            </div>
+                        </div>
+                        <p class="bb-score__link">試合終了</p>
+                    </a>
+                </div>
+
+                <!-- サンプル２つ目 -->
+                <div class="bb-score__item">
+                    <a class="bb-score__content" data-cl_cl_index="1">
+                        <p class="bb-score__description">
+                            <span class="bb-score__date">6/2（日）</span>
+                            <span class="bb-score__venue">エスコンF</span>
+                        </p>
+                        <div class="bb-score__status">
+                            <div class="bb-score__team">
+                                <span class="bb-score__homeLogo bb-score__homeLogo--npbTeam8"></span>
+                                <span>日本ハム</span>
+                                <span class="bb-score__score">9</span>
+                            </div>
+                            <span class="bb-score__score">-</span>
+                            <div class="bb-score__team">
+                                <span class="bb-score__score">2</span>
+                                <span>DeNA</span>
+                                <span class="bb-score__awayLogo bb-score__awayLogo--npbTeam3"></span>
+                            </div>
+                        </div>
+                        <p class="bb-score__link">試合終了</p>
+                    </a>
+                </div>
                 
             </div>
-            
         </div>
+
+        <!-- ログインフォームエリア -->
         <div class="col-md-6 login-form order-1 order-md-2">
             <div class="container">
                 <h1>ログイン</h1>
@@ -51,6 +109,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>試合スコア</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bb-score__item {
+            list-style: none;
+            width: 90%;
+            max-width: 400px;
+            background: #f8f8f8;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .bb-score__content {
+            text-decoration: none;
+            color: black;
+        }
+
+        .bb-score__description {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .bb-score__status {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .bb-score__team {
+            display: flex;
+            align-items: center;
+        }
+
+        .bb-score__homeLogo,
+        .bb-score__awayLogo {
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+        }
+
+        .bb-score__homeLogo:before,
+        .bb-score__awayLogo:before {
+            content: '';
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .bb-score__homeLogo--npbTeam8:before {
+            background-image: url('../images/npbTeam8.png');
+            /* 日本ハムのアイコン */
+        }
+
+        .bb-score__awayLogo--npbTeam3:before {
+            background-image: url('../images/npbTeam3.png');
+            /* DeNAのアイコン */
+        }
+
+        .bb-score__score {
+            font-weight: bold;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="bb-score__item">
+            <a class="bb-score__content" href="https://baseball.yahoo.co.jp/npb/game/2021020310/index"
+                data-cl_cl_index="1">
+                <p class="bb-score__description">
+                    <span class="bb-score__date">6/2（日）</span>
+                    <span class="bb-score__venue">エスコンF</span>
+                </p>
+                <div class="bb-score__status">
+                    <div class="bb-score__team">
+                        <span class="bb-score__homeLogo bb-score__homeLogo--npbTeam8"></span>
+                        <span>日本ハム</span>
+                        <span class="bb-score__score">9</span>
+                    </div>
+                    <span class="bb-score__score">-</span>
+                    <div class="bb-score__team">
+                        <span class="bb-score__score">2</span>
+                        <span>DeNA</span>
+                        <span class="bb-score__awayLogo bb-score__awayLogo--npbTeam3"></span>
+                    </div>
+                </div>
+                <p class="bb-score__link">試合終了</p>
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>
