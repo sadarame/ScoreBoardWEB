@@ -1,115 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>ログイン - スポーツスコアボード</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css  ">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-        </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スコアボード - ログイン</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
-
 <body>
-
-    <div class="row no-gutters">
-        <div class="col-md-6 bg-image order-2 order-md-1">
-            <!-- 説明エリア -->
-            <div>
-                <div class="overlay-content">
-                    <h2>お気に入りのチームを選択</h2>
-                    <p>リアルタイムに試合結果を表示</p>
-                </div>
-
-                <!-- スライダーのコンテナ -->
-
-                <!-- サンプル１つ目 -->
-                <div class="bb-score__item">
-                    <a class="bb-score__content" data-cl_cl_index="1">
-                        <p class="bb-score__description">
-                            <span class="bb-score__date">6/2（日）</span>
-                            <span class="bb-score__venue">エスコンF</span>
-                        </p>
-                        <div class="bb-score__status">
-                            <div class="bb-score__team">
-                                <span class="bb-score__homeLogo bb-score__homeLogo--npbTeam8"></span>
-                                <span>日本ハム</span>
-                                <span class="bb-score__score">9</span>
-                            </div>
-                            <span class="bb-score__score">-</span>
-                            <div class="bb-score__team">
-                                <span class="bb-score__score">2</span>
-                                <span>DeNA</span>
-                                <span class="bb-score__awayLogo bb-score__awayLogo--npbTeam3"></span>
+    <header>
+        <div class="header-content">
+            <h1>スコアボード</h1>
+            <img src="logo.png" alt="ロゴ" class="logo">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="image-section">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <div class="bb-score__item">
+                                <a class="bb-score__content" href="#">
+                                    <p class="bb-score__description">
+                                        <span class="bb-score__date">2024-06-09</span>
+                                        <span class="bb-score__venue">エスコンF</span>
+                                    </p>
+                                    <div class="bb-score__status">
+                                        <div class="bb-score__team">
+                                            <span class="bb-score__homeLogo bb-score__homeLogo--npbTeam8"></span>
+                                            <span>チームA</span>
+                                            <span class="bb-score__score">3</span>
+                                        </div>
+                                        <span class="bb-score__score">-</span>
+                                        <div class="bb-score__team">
+                                            <span class="bb-score__score">2</span>
+                                            <span>チームB</span>
+                                            <span class="bb-score__awayLogo bb-score__awayLogo--npbTeam3"></span>
+                                        </div>
+                                    </div>
+                                    <p class="bb-score__link">試合終了</p>
+                                </a>
                             </div>
                         </div>
-                        <p class="bb-score__link">試合終了</p>
-                    </a>
-                </div>
-
-                <!-- サンプル２つ目 -->
-                <div class="bb-score__item">
-                    <a class="bb-score__content" data-cl_cl_index="1">
-                        <p class="bb-score__description">
-                            <span class="bb-score__date">6/2（日）</span>
-                            <span class="bb-score__venue">エスコンF</span>
-                        </p>
-                        <div class="bb-score__status">
-                            <div class="bb-score__team">
-                                <span class="bb-score__homeLogo bb-score__homeLogo--npbTeam8"></span>
-                                <span>日本ハム</span>
-                                <span class="bb-score__score">9</span>
-                            </div>
-                            <span class="bb-score__score">-</span>
-                            <div class="bb-score__team">
-                                <span class="bb-score__score">2</span>
-                                <span>DeNA</span>
-                                <span class="bb-score__awayLogo bb-score__awayLogo--npbTeam3"></span>
+                        <div class="slide">
+                            <div class="bb-score__item">
+                                <a class="bb-score__content" href="#">
+                                    <p class="bb-score__description">
+                                        <span class="bb-score__date">2024-06-08</span>
+                                        <span class="bb-score__venue">東京ドーム</span>
+                                    </p>
+                                    <div class="bb-score__status">
+                                        <div class="bb-score__team">
+                                            <span class="bb-score__homeLogo bb-score__homeLogo--npbTeam8"></span>
+                                            <span>チームC</span>
+                                            <span class="bb-score__score">1</span>
+                                        </div>
+                                        <span class="bb-score__score">-</span>
+                                        <div class="bb-score__team">
+                                            <span class="bb-score__score">1</span>
+                                            <span>チームD</span>
+                                            <span class="bb-score__awayLogo bb-score__awayLogo--npbTeam3"></span>
+                                        </div>
+                                    </div>
+                                    <p class="bb-score__link">試合中</p>
+                                </a>
                             </div>
                         </div>
-                        <p class="bb-score__link">試合終了</p>
-                    </a>
+                        <div class="slide">
+                            <div class="bb-score__item">
+                                <a class="bb-score__content" href="#">
+                                    <p class="bb-score__description">
+                                        <span class="bb-score__date">2024-06-07</span>
+                                        <span class="bb-score__venue">甲子園</span>
+                                    </p>
+                                    <div class="bb-score__status">
+                                        <div class="bb-score__team">
+                                            <span class="bb-score__homeLogo bb-score__homeLogo--npbTeam8"></span>
+                                            <span>チームE</span>
+                                            <span class="bb-score__score">0</span>
+                                        </div>
+                                        <span class="bb-score__score">-</span>
+                                        <div class="bb-score__team">
+                                            <span class="bb-score__score">4</span>
+                                            <span>チームF</span>
+                                            <span class="bb-score__awayLogo bb-score__awayLogo--npbTeam3"></span>
+                                        </div>
+                                    </div>
+                                    <p class="bb-score__link">試合終了</p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
-                
+            </div>
+            <div class="login-section">
+                <h2>ソーシャルログイン</h2>
+                <button class="social-login-btn google">Googleでログイン</button>
+                <button class="social-login-btn facebook">Facebookでログイン</button>
+                <button class="social-login-btn twitter">Twitterでログイン</button>
             </div>
         </div>
-
-        <!-- ログインフォームエリア -->
-        <div class="col-md-6 login-form order-1 order-md-2">
-            <div class="container">
-                <h1>ログイン</h1>
-                <form onsubmit="login(event)">
-                    <div class="form-group">
-                        <label for="username">ユーザー名</label>
-                        <input type="text" class="form-control" id="username" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">パスワード</label>
-                        <input type="password" class="form-control" id="password" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">ログイン</button>
-                </form>
-                <div class="social-login">
-                    <p>またはソーシャルアカウントでログイン</p>
-                    <button class="btn btn-danger">Googleでログイン</button>
-                    <button class="btn btn-primary">Facebookでログイン</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function login(event) {
-            event.preventDefault();
-            // ログイン処理（ここではダミーで次の画面に遷移）
-            window.location.href = 'team_select.html';
-        }
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    </main>
+    <script src="js/login.js"></script>
 </body>
-
 </html>
