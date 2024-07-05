@@ -79,32 +79,6 @@ header {
 .social-login-btn.facebook { background-color: #3b5998; }
 .social-login-btn.twitter { background-color: #1da1f2; }
 
-.slider {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.slides {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.5s ease;
-    width: 100%;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 .bb-score__item {
     list-style: none;
     width: 90%;
