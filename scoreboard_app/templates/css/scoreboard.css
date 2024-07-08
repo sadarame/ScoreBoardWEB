@@ -49,13 +49,18 @@ nav ul li a {
     flex: 0 0 25%;
     max-width: 25%;
     background-color: #f0f0f0;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 5px;
 }
 
 .l-sidebar h2 {
-    font-size: 18px;
+    font-size: 1＿8px;
     margin-top: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #99FF99; /* 任意で背景色を設定 */
+    border-radius: 5px;
+    
 }
 
 .board-section {
@@ -96,6 +101,7 @@ nav ul li a {
 .bb-score__score {
     margin: 0 5px;
     font-weight: bold;
+    font-size: 40px;
 }
 
 .bb-score__link {
@@ -113,6 +119,13 @@ footer {
 }
 
 /* 基本的なスタイルはそのまま */
+.team-list {
+    display: flex;
+    flex-direction: column; /* Flexboxで縦並びに設定 */
+    align-items: center; /* 子要素を中央寄せ */
+
+}
+
 
 /* モバイル向けのスタイル */
 @media only screen and (max-width: 768px) {

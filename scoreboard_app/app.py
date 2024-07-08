@@ -16,6 +16,7 @@ from flask_login import (
 )
 from oauthlib.oauth2 import WebApplicationClient
 import requests
+from flask import render_template
 
 # 内部インポート
 from db import init_db_command
@@ -30,6 +31,10 @@ GOOGLE_DISCOVERY_URL = (
 
 # Flaskセットアップ
 app = Flask(__name__)
+
+# デバック設定
+app.config.update({'DEBUG': True })
+
 #セッション情報を暗号化するためのキーを設定
 app.secret_key = os.environ.get("SECRET_KEY") or os.urandom(24)
 
@@ -72,7 +77,9 @@ def index():
             )
         )
     else:
-        return '<a class="button" href="/login">Google Login</a>'
+        # return render_template('templates/login.html')
+        return render_template('login.html')
+        # return '<a class="button" href="/login">Google Login</a>'
 
 
 @app.route("/login")
@@ -160,3 +167,6 @@ def get_google_provider_cfg():
 
 if __name__ == "__main__":
     app.run(ssl_context="adhoc")
+
+    # 自動リロードのために変更
+    # app.run(use_reloader=False)
